@@ -29,20 +29,7 @@ def Page():
     # 新增圖片並排顯示 (使用 solara.Row 實現並排)
     solara.Markdown("## 現場照片")
     with solara.Row(gap="16px", style={"flex-wrap": "wrap", "justify-content": "center"}):
-        
-        # 圖片 1: 馬太鞍溪堰塞湖災害圖 1
-        # 修正: 將 style 屬性轉移至 solara.Box 容器中，以解決 solara.Image 不支援 style 的問題。
-        with solara.Box(style={
-            "flex": "1 1 48%",         # 佈局：平均佔據 48% 寬度
-            "min-width": "300px",      # 佈局：最小寬度
-            "max-height": "400px",     # 容器最大高度
-            "border-radius": "8px",    # 視覺：圓角
-            "box-shadow": "0 4px 12px rgba(0, 0, 0, 0.1)", # 視覺：陰影
-            "overflow": "hidden",      # 確保圓角剪裁
-            "display": "flex",         # 確保圖片在 Box 內能正確拉伸
-            "justify-content": "center",
-            "align-items": "center",
-        }):
+
             solara.Image(
                 image=f"{repo_url}pic_01.jpg",
                 alt="馬太鞍溪堰塞湖",
@@ -51,19 +38,6 @@ def Page():
                 height="100%",
             )
         
-        # 圖片 2: 馬太鞍溪堰塞湖災害圖 2
-        # 修正: 將 style 屬性轉移至 solara.Box 容器中。
-        with solara.Box(style={
-            "flex": "1 1 48%",
-            "min-width": "300px",
-            "max-height": "400px",
-            "border-radius": "8px",
-            "box-shadow": "0 4px 12px rgba(0, 0, 0, 0.1)",
-            "overflow": "hidden",
-            "display": "flex",
-            "justify-content": "center",
-            "align-items": "center",
-        }):
             solara.Image(
                 image=f"{repo_url}pic_02.jpg",
                 alt="馬太鞍溪堰塞湖災害",
