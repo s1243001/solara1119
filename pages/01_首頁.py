@@ -47,5 +47,4 @@ def Page():
                 width="100%",
                 # 移除 height 和 alt 參數以提高相容性
             )
-
-        solara.Markdown(markdown)
+            
