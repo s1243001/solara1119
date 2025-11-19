@@ -55,7 +55,7 @@ def Page():
                 "box-shadow": "0 4px 12px rgba(0, 0, 0, 0.1)"
             },
             alt="馬太鞍溪堰塞湖災害"
-        
+        )
     solara.Markdown("## 馬太鞍溪堰塞湖位置2D 捲簾比對 (Split Map)")
 
     split_widget = solara.use_memo(create_split_map, dependencies=[])
