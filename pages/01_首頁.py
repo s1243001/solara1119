@@ -10,19 +10,8 @@ name = solara.reactive("Guest")
 
 @solara.component
 def Page():
-
+   
     with solara.Column(align="center"):
-            # 2. Solara 會「監視」name.value
-    solara.Markdown(f"## 你好, {name.value}!")
-
-    # 3. 這個函式會改變 name.value
-    def on_click():
-        name.value = "吳承翰"
-
-    # 4. 按鈕點擊時，name.value 改變，
-    #    上面的 Markdown 元件會「自動」更新
-    solara.Button("點我改名", on_click=on_click)
-    
         markdown = """
         ## 吳承翰的馬太鞍溪網站
 
