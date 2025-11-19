@@ -30,7 +30,6 @@ def Page():
     solara.Markdown("## 現場照片")
     solara.Image(
                 image=f"{repo_url}pic_01.jpg",
-                alt="馬太鞍溪堰塞湖",
                 # 移除 style 參數，改用 width/height 確保圖片填充容器
                 width="100%",
                 height="100%",
@@ -38,7 +37,6 @@ def Page():
         
     solara.Image(
                 image=f"{repo_url}pic_02.jpg",
-                alt="馬太鞍溪堰塞湖災害",
                 # 移除 style 參數，改用 width/height 確保圖片填充容器
                 width="100%",
                 height="100%",
