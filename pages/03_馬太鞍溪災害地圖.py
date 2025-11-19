@@ -24,8 +24,8 @@ def create_3d_map():
 
     m = leafmap.Map(
         style=style_url,
-        center=[121.29008028277161,23.696394945673422], # 台灣中心偏向山區，方便觀察地形
-        zoom=9,
+        center=[121.42961489442239,23.68323270710366], # 台灣中心偏向山區，方便觀察地形
+        zoom=11,
         pitch=45,  # 傾斜角度 (65度)
         bearing=15, # 旋轉角度 (15度)
         # 啟用地形：當使用 MapTiler Style 時，通常只需設定 style URL，
@@ -42,7 +42,8 @@ def Page():
         solara.Warning(
             "MapTiler API Key 未設定。請在 Hugging Face Space Settings 中加入 'MAPTILER_API_KEY' Secret，否則 3D 地形無法載入。"
         )
-
+    solara.Markdown("##馬太鞍溪堰塞湖潰堤災害")
+    solara.Markdown("在樺加沙颱風來臨後，馬太鞍溪堰塞湖潰堤，洪水挾帶泥沙沖向下游，馬太鞍溪橋被沖毀，同時下游南側的堤防受損，導致大量洪水沖入光復鄉。在當下，政府將民眾疏散至較高的光復糖廠，並將糖廠站設為指揮所。")
     solara.Markdown("## 3D 地形展示 (MapLibre GL)")
 
     # 3. 使用 solara.use_memo 快取地圖物件
