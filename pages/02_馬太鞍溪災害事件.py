@@ -20,7 +20,43 @@ def create_split_map():
 
 @solara.component
 def Page():
-    solara.Markdown("## 2D 捲簾比對 (Split Map)")
+    
+    solara.Markdown("##簡介")
+    solara.Markdown("花蓮馬太鞍溪堰塞湖災害，於2025年九月發生，肇因為薇帕颱風的雨勢引發山崩，在馬太鞍溪上游萬榮鄉處形成堰塞湖。其後因樺加沙颱風導致多次溢流，造成下游光復鄉多處遭洪水淹沒，導致多人傷亡與嚴重毀損")
+    repo_url = "https://raw.githubusercontent.com/s1243001/11055solara-webmap-app/main/"
+    #在這裡幫我新增圖片
+    solara.Markdown("## 現場照片")
+    with solara.Row(gap="16px", style={"flex-wrap": "wrap", "justify-content": "center"}):
+        
+        # 圖片 1: 馬太鞍溪堰塞湖災害圖 1
+        solara.Image(
+            image=f"{repo_url}pic_01.jpg",
+            style={
+                # 使用 flex 屬性使兩張圖片平均分佈並排，並在小螢幕時換行
+                "flex": "1 1 48%",
+                "min-width": "300px", # 確保在小螢幕上不會太小
+                "max-height": "400px",
+                "object-fit": "cover",
+                "border-radius": "8px",
+                "box-shadow": "0 4px 12px rgba(0, 0, 0, 0.1)"
+            },
+            alt="馬太鞍溪堰塞湖"
+        )
+        
+        # 圖片 2: 馬太鞍溪堰塞湖災害圖 2
+        solara.Image(
+            image=f"{repo_url}pic_02.jpg",
+            style={
+                "flex": "1 1 48%",
+                "min-width": "300px",
+                "max-height": "400px",
+                "object-fit": "cover",
+                "border-radius": "8px",
+                "box-shadow": "0 4px 12px rgba(0, 0, 0, 0.1)"
+            },
+            alt="馬太鞍溪堰塞湖災害"
+        
+    solara.Markdown("## 馬太鞍溪堰塞湖位置2D 捲簾比對 (Split Map)")
 
     split_widget = solara.use_memo(create_split_map, dependencies=[])
 
