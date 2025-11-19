@@ -28,19 +28,8 @@ def Page():
     
     # 新增圖片並排顯示 (使用 solara.Row 實現並排)
     solara.Markdown("## 現場照片")
-    solara.Image(
-                image=f"{repo_url}pic_01.jpg",
-                # 移除 style 參數，改用 width/height 確保圖片填充容器
-                width="100%",
-                height="100%",
-            )
-        
-    solara.Image(
-                image=f"{repo_url}pic_02.jpg",
-                # 移除 style 參數，改用 width/height 確保圖片填充容器
-                width="100%",
-                height="100%",
-            )
+    solara.Image(image=f"{repo_url}pic_01.jpg")            
+    solara.Image(image=f"{repo_url}pic_02.jpg")
     
     solara.Markdown("## 馬太鞍溪堰塞湖位置2D 捲簾比對 (Split Map)")
 
