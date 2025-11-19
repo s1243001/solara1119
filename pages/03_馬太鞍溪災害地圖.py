@@ -25,7 +25,7 @@ def create_3d_map():
     m = leafmap.Map(
         style=style_url,
         center=[121.42961489442239,23.68323270710366], # 台灣中心偏向山區，方便觀察地形
-        zoom=11,
+        zoom=12,
         pitch=45,  # 傾斜角度 (65度)
         bearing=15, # 旋轉角度 (15度)
         # 啟用地形：當使用 MapTiler Style 時，通常只需設定 style URL，
