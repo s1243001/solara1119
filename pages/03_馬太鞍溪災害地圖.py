@@ -24,7 +24,7 @@ def create_3d_map():
 
     m = leafmap.Map(
         style=style_url,
-        center=[121.2, 23.8], # 台灣中心偏向山區，方便觀察地形
+        center=[121.29008028277161,23.696394945673422], # 台灣中心偏向山區，方便觀察地形
         zoom=9,
         pitch=65,  # 傾斜角度 (65度)
         bearing=15, # 旋轉角度 (15度)
