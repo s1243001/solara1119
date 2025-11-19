@@ -13,7 +13,7 @@ def create_split_map():
     )
 
     # 調整地圖高度
-    split_control.layout.height = "650px"
+    split_control.layout.height = "450px"
 
     return split_control
 
@@ -21,15 +21,18 @@ def create_split_map():
 def Page():
     
     solara.Markdown("## 簡介")
-    solara.Markdown("花蓮馬太鞍溪堰塞湖災害，於2025年九月發生，肇因為薇帕颱風的雨勢引發山崩，在馬太鞍溪上游萬榮鄉處形成堰塞湖。其後因樺加沙颱風導致多次溢流，造成下游光復鄉多處遭洪水淹沒，導致多人傷亡與嚴重毀損")
+    solara.Markdown("花蓮馬太鞍溪堰塞湖災害，於2025年九月發生，肇因為薇帕颱風的雨勢引發山崩，在馬太鞍溪上游萬榮鄉處形成堰塞湖。其後因樺加沙颱風導致多次溢流，造成下游光復鄉多處遭洪水淹沒，導致多人傷亡與嚴重毀損。")
     
     # GitHub 圖片庫的基礎 URL
     repo_url = "https://raw.githubusercontent.com/s1243001/11055solara-webmap-app/main/"
     
     # 新增圖片並排顯示 (使用 solara.Row 實現並排)
     solara.Markdown("## 現場照片")
-    solara.Image(image=f"{repo_url}pic_01.jpg")            
-    solara.Image(image=f"{repo_url}pic_02.jpg")
+    pic01 = repo_url+"pic_01.jpg"
+    pic02 = repo_url+"pic_02.jpg"
+
+    solara.Image(image=pic01)            
+    solara.Image(image=pic02)
     
     solara.Markdown("## 馬太鞍溪堰塞湖位置2D 捲簾比對 (Split Map)")
 
