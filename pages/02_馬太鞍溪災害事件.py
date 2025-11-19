@@ -28,9 +28,7 @@ def Page():
     
     # 新增圖片並排顯示 (使用 solara.Row 實現並排)
     solara.Markdown("## 現場照片")
-    with solara.Row(gap="16px", style={"flex-wrap": "wrap", "justify-content": "center"}):
-
-            solara.Image(
+    solara.Image(
                 image=f"{repo_url}pic_01.jpg",
                 alt="馬太鞍溪堰塞湖",
                 # 移除 style 參數，改用 width/height 確保圖片填充容器
@@ -38,7 +36,7 @@ def Page():
                 height="100%",
             )
         
-            solara.Image(
+    solara.Image(
                 image=f"{repo_url}pic_02.jpg",
                 alt="馬太鞍溪堰塞湖災害",
                 # 移除 style 參數，改用 width/height 確保圖片填充容器
