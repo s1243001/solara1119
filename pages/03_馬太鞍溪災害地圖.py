@@ -26,7 +26,7 @@ def create_3d_map():
         style=style_url,
         center=[121.29008028277161,23.696394945673422], # 台灣中心偏向山區，方便觀察地形
         zoom=9,
-        pitch=65,  # 傾斜角度 (65度)
+        pitch=45,  # 傾斜角度 (65度)
         bearing=15, # 旋轉角度 (15度)
         # 啟用地形：當使用 MapTiler Style 時，通常只需設定 style URL，
         # Leafmap 會自動處理 style.json 內定義的地形源。
