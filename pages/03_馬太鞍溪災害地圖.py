@@ -47,7 +47,12 @@ def Page():
             )
         
         solara.Markdown("## 馬太鞍溪堰塞湖潰堤災害")
-        solara.Markdown("在樺加沙颱風來臨後，馬太鞍溪堰塞湖潰堤，洪水挾帶泥沙沖向下游，馬太鞍溪橋被沖毀，同時下游南側的堤防受損，導致大量洪水沖入光復鄉。在當下，政府將民眾疏散至較高的光復糖廠，並將糖廠站設為指揮所。")
+        solara.Markdown("在樺加沙颱風來臨後，馬太鞍溪堰塞湖潰堤，洪水挾帶泥沙沖向下游，馬太鞍溪橋被沖毀，同時下游南側的堤防受損，導致大量洪水沖入光復鄉。在當下，政府將民眾疏散至較高的光復糖廠，並將糖廠暫時設為指揮所。")
+        repo_url = "https://raw.githubusercontent.com/s1243001/solara1119/main/"
+        solara.Image(image=f"{repo_url}pic_03.jpg",
+                width="100%",
+                # 移除 height 和 alt 參數以提高相容性)
+        )
         solara.Markdown("## 3D 地形展示 (MapLibre GL)")
 
         # 4. 渲染地圖
