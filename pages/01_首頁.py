@@ -3,6 +3,16 @@ import solara
 
 @solara.component
 def Page():
+    with solara.Column(align="center"):
+        markdown = """
+        ## 吳承翰的馬太鞍溪網站
+
+        這是一個顯示馬太鞍溪堰塞湖2D及3D圖的網站
+        <br>
+        (咕嚕咕嚕咕嚕)
+        """
+
+        solara.Markdown(markdown)
     solara.Markdown("## 簡介")
     solara.Markdown("花蓮馬太鞍溪堰塞湖災害，於2025年九月發生，肇因為薇帕颱風的雨勢引發山崩，在馬太鞍溪上游萬榮鄉處形成堰塞湖。其後因樺加沙颱風導致多次溢流，造成下游光復鄉多處遭洪水淹沒，導致多人傷亡與嚴重毀損。")
     
@@ -47,4 +57,4 @@ def Page():
                 width="100%",
                 # 移除 height 和 alt 參數以提高相容性
             )
-            
+
