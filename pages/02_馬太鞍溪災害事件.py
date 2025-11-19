@@ -24,7 +24,7 @@ def Page():
     solara.Markdown("花蓮馬太鞍溪堰塞湖災害，於2025年九月發生，肇因為薇帕颱風的雨勢引發山崩，在馬太鞍溪上游萬榮鄉處形成堰塞湖。其後因樺加沙颱風導致多次溢流，造成下游光復鄉多處遭洪水淹沒，導致多人傷亡與嚴重毀損。")
     
     # GitHub 圖片庫的基礎 URL
-    repo_url = "https://raw.githubusercontent.com/s1243001/11055solara-webmap-app/main/"
+    repo_url = "https://raw.githubusercontent.com/s1243001/solara1119/main/"
     
     # 新增圖片並排顯示 (使用 solara.Row 實現並排)
     solara.Markdown("## 現場照片")
